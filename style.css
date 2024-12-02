@@ -7,13 +7,22 @@ body {
 }
 
 /* Header Section */
-.header-container {
+.header-container{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  height: fit-content;
-  background-color:#e7d8d82f;
+  padding: 10px ;
+  height:fit-content;
+  background-color:#f3ededa1;
+}
+  header{
+  display: block;
+  position: fixed;
+  width: 100%;
+  }
+main{
+  padding-top: 100px;
 }
 
 .logo {
@@ -353,6 +362,7 @@ ul{
   font-size: 12px;
 }
 
+
 .section a {
   color: #fff;
   text-decoration: none;
@@ -372,12 +382,16 @@ ul{
 }
 #emailinput{
   height: 1vw;
-  background-color: #000;
   border: none;
+  outline: none;
+  background-color: #000;
   border-bottom: 1px solid rgb(247, 236, 236);
   padding: 10px;
-  font-size: 16px;
+  font-size: 1rem;
+  color: #F7F6F6;
 }
+
+
 .subscribebtn{
   background-color: #000;
   display: inline-flex;
