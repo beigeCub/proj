@@ -238,6 +238,10 @@ main{
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+  padding: 20px 40px;
+  margin: auto;
+  max-width:1280px;
+
 }
 
 /* Card styling .*/
@@ -394,6 +398,7 @@ ul{
 
 .subscribebtn{
   background-color: #000;
+  color: #FFFFFF;
   display: inline-flex;
  margin: 20px 10px;
  padding: 10px 10px;
@@ -404,6 +409,17 @@ ul{
 .check{
   margin-top: 10px;
 }
+
+#checkbox2{
+  background-color: #000;
+  border: 1px solid white;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+}
+
 .subscribebtn:hover{
   background-color: #000;
   color: #fff;

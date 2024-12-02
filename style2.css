@@ -63,7 +63,7 @@ main{
 }
 .search-container{
     display: flex;
-    align-items:center;
+    align-items:center;FR
     border-bottom: 1px solid black;
     padding: 5px;
     width: 40%;
@@ -331,11 +331,23 @@ ul{
  padding: 10px 10px;
  border-radius: 5%;
  border: none;
+ color: #FFFFFF;
 }
 
 .check{
   margin-top: 10px;
 }
+
+#checkbox2{
+  background-color: #000;
+  border: 1px solid white;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+}
+
 .subscribebtn:hover{
   background-color: #000;
   color: #fff;
