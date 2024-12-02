@@ -132,56 +132,7 @@ body{
   }
   
   
-  @media (max-width:1000px) {
-    .search-bar {
-        width: 50%; 
-      }
-      .search-bar input {
-        font-size: 0.9rem; 
-      }
-      .logo h1 {
-        font-size: 4vw; 
-      }
-      .logo p {
-        font-size: 2vw; 
-      }
-    .toggle{
-        display:flex;
-    }
-    nav{
-        position:absolute;
-        width: 100vw;
-        height: 100vh;
-        left: 100%;
-        top: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 1s;
-        background-color: rgba(70, 61, 61, 0.5);
-        z-index: 999;
-    }
-    nav a{
-        align-items: center;
-        justify-content: center;
-        padding-top: 15%;
-        font-size: 200px;;
-    }
-    .opened{
-        top: 0;
-        left: 0;
-    }
-    .opened ~ * {
-        filter: blur(5px); 
-        pointer-events: none; 
-      }
-    .opened ~ *:not(.toggle) {
-        filter:blur(10px);
-    }
-    .toggle {
-        pointer-events: auto; 
-    }
-}
+
 .picture{
   overflow: hidden;
   display: inline-block;
@@ -310,5 +261,174 @@ p{
   background-color: black;
   color: white;
   cursor: pointer;
-  
+}
+
+footer{
+  background-color: #000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+.options{
+  display: flex;
+  justify-content:center;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+ul{
+  list-style: none;
+  font-size: 12px;
+}
+
+.section a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+.mail-subscription{
+  width:fit-content;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.mail-subscription p{
+  color: #fff;
+  font-size: 12px;
+}
+#emailinput{
+  height: 1vw;
+  background-color: #000;
+  border: none;
+  border-bottom: 1px solid rgb(247, 236, 236);
+  padding: 10px;
+  font-size: 16px;
+}
+.subscribebtn{
+ margin: 20px 10px;
+ padding: 10px 10px;
+ border-radius: 5%;
+ border: none;
+}
+
+.check{
+  margin-top: 10px;
+}
+.subscribebtn:hover{
+  background-color: #000;
+  color: #fff;
+  border:1px solid #fff;
+  transition: .4s;
+}
+
+
+
+@media (max-width:768px) {
+  .search-bar {
+      width: 50%; 
+    }
+    .search-bar input {
+      font-size: 0.9rem; 
+    }
+    .logo h1 {
+      font-size: 4vw; 
+    }
+    .logo p {
+      font-size: 2vw; 
+    }
+  .toggle{
+      display:flex;
+  }
+  nav{
+      position:absolute;
+      width: 100vw;
+      height: 100vh;
+      left: 100%;
+      top: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 1s;
+      background-color: rgba(70, 61, 61, 0.5);
+      z-index: 999;
+  }
+  nav a{
+      align-items: center;
+      justify-content: center;
+      padding-top: 15%;
+      font-size: 200px;;
+  }
+  .opened{
+      top: 0;
+      left: 0;
+  }
+  .opened ~ * {
+      filter: blur(5px); 
+      pointer-events: none; 
+    }
+  .opened ~ *:not(.toggle) {
+      filter:blur(10px);
+  }
+  .toggle {
+      pointer-events: auto; 
+  }
+  .giftcard-content{
+    display: inline;
+    gap: 20px;
+  }
+  .picture{
+    width: 60%;
+    margin: 2px 10px;
+    padding: 20px 10px;
+  }
+  .info h1, .info .pamount {
+    text-align: center;
+    font-size: 3vw; 
+  }
+
+  .amounts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .amounts button{
+    width: 15%; 
+  }
+  .qty {
+    display: flex;
+    justify-content: center; 
+    width: 80%; 
+    margin: 0 auto; 
+  }
+  .qty input{
+    width: 40%;
+  }
+   .recipient{
+    display: flex;
+    gap: 20px;
+  } 
+  .inputbig, .inputsmall{
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+  }
+  .buybutton{
+    display: block; 
+    width: 90%;
+    margin: 10px auto; 
+    height: 5vw;
+  }
+  footer .options{
+    display: inline;
+  }
+  footer .mail-subscription{
+    padding: 10px ;
+    width: 80%;
+  }
 }

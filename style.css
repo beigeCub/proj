@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   padding: 10px 20px;
   height: fit-content;
-  background-color: #FFFFFF;
+  background-color:#e7d8d82f;
 }
 
 .logo {
@@ -244,7 +244,7 @@ body {
 
 .card:hover {
   transform: scale(1.05);
-  transition: 2s;
+  transition: .5s;
 }
 
 
@@ -297,23 +297,102 @@ button:hover {
   .card {
     width: calc(50% - 20px);
   }
+  footer .options{
+    display: inline;
+  }
+  footer .mail-subscription{
+    padding: 10px ;
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
   .card {
     width: 100%;
   }
+  footer .options{
+    display: inline;
+  }
+  footer .mail-subscription{
+    padding: 10px ;
+    width: 80%;
+  }
 }
 
-.foot {
+.about {
   background-color: #F7F6F6;
-
+  text-align: center;
+  padding-top: 10px;
 }
 
-.foot p {
+.about p {
   color: black;
-  padding: 35px;
-  margin-top: 50px;
+  padding: 5px;
   font-size: 30px;
   text-align: center;
 }
+
+footer{
+  background-color: #000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+.options{
+  display: flex;
+  justify-content:center;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+ul{
+  list-style: none;
+  font-size: 12px;
+}
+
+.section a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+.mail-subscription{
+  width:fit-content;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.mail-subscription p{
+  color: #fff;
+  font-size: 12px;
+}
+#emailinput{
+  height: 1vw;
+  background-color: #000;
+  border: none;
+  border-bottom: 1px solid rgb(247, 236, 236);
+  padding: 10px;
+  font-size: 16px;
+}
+.subscribebtn{
+ margin: 20px 10px;
+ padding: 10px 10px;
+ border-radius: 5%;
+ border: none;
+}
+
+.check{
+  margin-top: 10px;
+}
+.subscribebtn:hover{
+  background-color: #000;
+  color: #fff;
+  border:1px solid #fff;
+  transition: .4s;
+}
+
+
