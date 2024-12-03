@@ -88,18 +88,18 @@
                     <button class="rec">For Someone Else</button>
                     <button class="rec">For Myself</button>
                 </div>
-                <p>Recipient Email*</p>
-                <input class='inputsmall' type="text" required>
-                <p> Recipient Name</p>
-                <input class='inputsmall' type="text" >
-                <p>Delivery Date</p>
-                <input class='inputsmall dateinput' type="date" required>
-                <p>Message</p>
-                <input class='inputbig' type="text"> <br>
-                <br>
-                <button class="buybutton">
-                    Buy Now
-                </button>
+
+                <form action="">
+                    <label for="rec-mail" class="formtext">Recipient Email*</label><br>
+                    <input type="text" class="rec" id="rec-mail" name="fname" value="" required><br>
+                    <label for="rec-name" class="formtext">Recipient Name</label><br>
+                    <input type="text" class="rec" id="rec-name" name="lname" value=""><br>
+                    <label for="del-date" class="formtext">Delivery Date</label><br>
+                    <input type="date" class="del-date" id="del-date" name="lname" value=""><br>
+                    <label for="message" class="formtext">Message</label><br>
+                    <input type="text" class="rec-message" id="message" name="lname" value=""><br><br>
+                    <input type="submit" class="buybutton" value="Buy Now">
+                  </form>
             </div>
         </div>
 
